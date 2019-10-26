@@ -5,7 +5,10 @@
   "main": "index.js",
   "dependencies": {
     "@hapi/joi": "^16.1.7",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7",
+    "negotiator": "^0.6.2",
+    "nodemon": "^1.19.4"
   },
   "devDependencies": {},
   "scripts": {
