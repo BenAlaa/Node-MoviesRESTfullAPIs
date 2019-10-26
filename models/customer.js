@@ -22,11 +22,11 @@ const Customer =  mongoose.model('Customer', new mongoose.Schema({
 
 
 function validateCustomer(customer) {
-const schema = Joi.object({
-    name: Joi.string().min(5).max(50).required(),
-    phone: Joi.string().min(5).max(50).required(),
-    isGold: Joi.boolean
-});
+    const schema = Joi.object({
+        name: Joi.string().min(5).max(50).required(),
+        phone: Joi.string().min(5).max(50).required(),
+        isGold: Joi.boolean
+    });
 
 return schema.validate(customer);
 }
